@@ -1,0 +1,44 @@
+
+
+.profile-container {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 150px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+.profile-info {
+  text-align: left;
+  font-size: 18px;
+}
+
+.profile-buttons button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-buttons button:hover {
+  background: #0056b3;
+}

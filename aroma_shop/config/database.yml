@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: u491894875_root_2
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: 195.35.59.14
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: u491894875_aroma_shop
+
+test:
+  <<: *default
+  database: u491894875_aroma_shop
+
+production:
+  <<: *default
+  database: u491894875_aroma_shop
+  username: u491894875_root_2
+  password: <%= ENV['DATABASE_PASSWORD'] %>
